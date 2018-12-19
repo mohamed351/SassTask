@@ -1,0 +1,145 @@
+*
+{
+    box-sizing: border-box;
+}
+.mydiv
+{
+  
+    
+    background-color: #eee;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+@for $i from 1 through 12
+{
+    .col-lg-#{$i}, .col-md-#{$i} , .col-sm-#{$i}, .col-xs-#{$i}
+    {
+        float: left;
+    }
+ 
+}
+
+@media(max-width:768px)
+{
+    @for $i from 1 through 12
+    {
+    .col-lg-#{$i}
+    {
+      
+       width:100% / (12 /$i);
+
+    }
+   } 
+
+   @for $i from 1 through 12
+   {
+   .col-md-#{$i}
+   {
+     
+      width:100% / (12 /$i);
+
+   }
+  }
+
+    @for $i from 1 through 12
+    {
+    .col-sm-#{$i}
+    {
+       
+       width:100% / (12 /$i);
+
+    }
+   }
+
+
+    @for $i from 1 through 12
+    {
+        .col-xs-#{$i}
+        {
+           
+           width:100% / (12 /$i);
+
+        }
+    }
+}
+@media(min-width:768px)
+{
+    @for $i from 1 through 12
+    {
+    .col-lg-#{$i}
+    {
+      
+       width:100% / (12 /$i);
+
+    }
+   } 
+
+   @for $i from 1 through 12
+   {
+   .col-md-#{$i}
+   {
+     
+      width:100% / (12 /$i);
+
+   }
+  }
+
+    @for $i from 1 through 12
+    {
+    .col-sm-#{$i}
+    {
+       
+       width:100% / (12 /$i);
+
+    }
+   }
+
+ 
+   
+}
+
+@media(min-width:992px)
+{
+   
+    @for $i from 1 through 12
+    {
+    .col-lg-#{$i}
+    {
+      
+       width:100% / (12 /$i);
+
+    }
+   } 
+ 
+
+
+    @for $i from 1 through 12
+    {
+    .col-md-#{$i}
+    {
+      
+       width:100% / (12 /$i);
+
+    }
+   }
+
+ 
+}
+
+
+@media(min-width:1200px)
+{
+    @for $i from 1 through 12
+    {
+    .col-lg-#{$i}
+    {
+      
+       width:100% / (12 /$i);
+
+    }
+   } 
+
+  
+
+}
